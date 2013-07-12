@@ -1,0 +1,21 @@
+0:
+  Name: varredura com nmap
+  Cmd: nmap
+  Project_id: CVS_000002
+  Start_data: data de inicio
+  Log_file: "tmp.txt"
+
+1:
+  Argv: "-sF -P0 localhost"
+  Date: "0 22 * * 1-5"
+  Label: "Varredura com flag FIN"
+2:
+  Argv: "-sT -vv -O localhost"
+  Date: "0 22 * * 1-5"
+  Label: "fingerprint simples"
+3:
+  Argv: "-sS -P0 -g 53 -vv localhost"
+  Date: "0 22 * * 1-5"
+  Label: "outra varredura"
+
+
